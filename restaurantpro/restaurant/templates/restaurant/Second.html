@@ -1,0 +1,29 @@
+<center>
+<ul>
+<label>WELCOME </label>
+<br><label>Restaurant Name:</label>{{rest1.name}}<br>
+<br><label>Restaurant Address:</label>{{rest1.address}}</br>
+<br>
+<label>Menu</label>
+
+{% for k in items %}
+<label>item Name:</label>{{k.nameofitem}}
+<br><label>price</label>{{k.price}}
+{% endfor %}
+ 
+</ul>
+<br>
+<form action="/restaurant/{{rest1.id}}/additem/" method="POST">
+<br>
+ <label>Add Item</label>
+    <br>
+     Item name:<br>
+     <input type="text" name="item"><br>
+     Price:<br>
+     <input type="text" name="price"><br>
+    <br> <input type="submit" name="submit"><br>
+</form>
+       
+ </ul>
+</center>
+    

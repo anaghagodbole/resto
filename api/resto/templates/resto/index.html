@@ -1,0 +1,9 @@
+
+<center>
+    <ul>
+    {% for r in latest_resto_list %}
+    <li><a href="/resto/{{ r.id }}/">{{ r.name }}</a></li>
+    {% endfor %}
+    </ul>
+</center>
+

@@ -1,0 +1,7 @@
+ <center>
+    <ul>
+    {% for r in latest_resto_list %}
+    <li><a href="/restaurant/{{ r.id }}/">{{ r.name }}</a></li>
+    {% endfor %}
+    </ul>
+</center>
