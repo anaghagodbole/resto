@@ -24,6 +24,7 @@ def restaurant(request):
            "address":i.address
            }
     List.append(dict)
+    print "list restaurants"
     return HttpResponse(json.dumps(List))
 
 def restaurantitem(request,restaurant_id):
