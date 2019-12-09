@@ -124,3 +124,7 @@ def additem(request, restaurant_id):
         return render(request, 'resto/Second.html', context)
     elif request.method == 'GET':
         return HttpResponse("unauthorized")
+
+
+def count(request):
+    return HttpResponse(Restaurant.objects.all().count())
