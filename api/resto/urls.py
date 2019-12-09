@@ -16,6 +16,8 @@ urlpatterns = [
     path('<int:restaurant_id>/',views.detail, name='detail'),
     #ex:/restaurant/show
     path('<int:restaurant_id>/additem/',views.additem, name='additem'),
+    #ex:/restaurant/ count
+    #path('count/',views.count,name='count')
    
    
    
